@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'THICCCBOI-reg';
+  src: url('../fonts/Webfont/THICCCBOI-Regular.woff2') format('woff2'),
+       url('../fonts/TTF/THICCCBOI-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'THICCCBOI-thi';
+  src: url('../fonts/Webfont/THICCCBOI-ThicccAF.woff2') format('woff2'),
+       url('../fonts/TTF/THICCCBOI-ThicccAF.ttf') format('truetype');
+}

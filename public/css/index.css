@@ -1,0 +1,62 @@
+/* body {
+    font-family: 'THICCCBOI-thi';
+} */
+
+@media (max-width: 1024px) {
+    .home-background {
+        background-image: url("../images/home_bg.webp");
+        background-size: cover;
+        background-position: 40%;
+    }
+}
+
+.background-gradient {
+    position: fixed;
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(270deg, #000000, #0000),
+        linear-gradient(17deg, #0031ac, #000000 62%);
+    z-index: 1;
+}
+
+.hero-button-transition {
+    transition: background-color .4s cubic-bezier(.25, .46, .45, .94),
+        color .4s cubic-bezier(.25, .46, .45, .94);
+}
+
+.hero-content-transition {
+    transform: translate3d(3em, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+        rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    opacity: 0;
+    animation: hero-content-transaction 1.5s cubic-bezier(.9, 0, .5, 1) .2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hero-content-transaction {
+    0% {
+        transform: translate3d(3em, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+            rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate3d(0em, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+            rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+        opacity: 1;
+    }
+}
+
+/* hamburger */
+/* .is-open */
+#hamburger {
+    transform: translateY(-100%);
+    transition: transform .4s;
+}
+
+#hamburger.is-show {
+    transform: translateY(0);
+}
+
+#overlay.is-show {
+    display: block;
+}
